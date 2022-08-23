@@ -1,0 +1,102 @@
+.chat{
+    width: 100%;
+}
+.chat--header{
+    background-color: #F5F5F5;
+    padding: 15px;
+    border-bottom: 2px solid #d4d2d2;
+    display: flex;
+    font-size: 27px;
+    gap: 10px;
+    align-items: center;
+    max-height: 10vh;
+    min-height: 70px;
+}
+.chat--content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    overflow:scroll;
+    height: 70vh;
+}
+.chat--content__message{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.chat--content__message--holder{
+    display: flex;
+    flex-direction: column;
+}
+.chat--content__message--holder__text{
+    background-color: #3D4251;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    width: fit-content;
+}
+.chat--content__message--holder__date{
+    color: #787878;
+    margin: 7px 0 0 10px;
+    font-size: 15px;
+}
+.chat--content__message__default{
+    flex-direction: row-reverse;
+}
+.chat--content__message--holder__default{
+    align-items: flex-end;
+}
+.chat--content__message--holder__default .chat--content__message--holder__text{
+    background-color: #E0E0E0;
+    color: #4C4C4C;
+}
+.chat--footer{
+    height: 20vh;
+    background-color: #F5F5F5;
+    border-top: 2px solid #d4d2d2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+.chat--footer form{
+    position: relative;
+}
+.chat--footer__input{
+    cursor: text;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    width: 50vw;
+    border: 1px solid #e1dfdf;
+    font-size: 18px;
+    padding: 0 15px;
+}
+.chat--footer__input:focus{
+    outline: none;
+}
+.chat--footer__submit{
+    background-image: url(../images/send.png);
+    background-size: cover;
+    background-color: transparent;
+    border: 0;
+    height: 40px;
+    width: 40px;
+    top: 5px;
+    position: absolute;
+    right: 5px;
+    opacity: 0.6;
+}
+.notification {
+    padding: 20px;
+    background-color: #365ff4; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 300px;
+    border-radius: 30px;
+}
